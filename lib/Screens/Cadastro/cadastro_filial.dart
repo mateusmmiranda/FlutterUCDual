@@ -16,7 +16,7 @@ class _TelaState extends State<Tela> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Imagem Filial Contagem"),
+        title: Text("IImagens Filiais"),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -24,13 +24,12 @@ class _TelaState extends State<Tela> {
         child: Column(
           children: <Widget>[
             Image.asset('assets/images/foto1.jpg'),
-            Text('Imagem 1'),
             Image.asset('assets/images/foto2.jpg'),
-            Text('Imagem 2'),
             Image.asset('assets/images/foto3.jpg'),
-            Text('Imagem 3'),
             Image.asset('assets/images/foto1.jpg'),
-            Text('Imagem 4'),
+            Text('Filial Jose Faria, N° 600'),
+            Text("Filial Belo Horizonte, N° 1250, Avenida do Contorno "),
+            Text("Horario de funcionamento:08 as 19, segunda a sexta "),
           ],
         ),
       ),
