@@ -21,15 +21,18 @@ class _TelaState extends State<Tela> {
         backgroundColor: Colors.blue,
       ),
       body: Card(
-        child: Column(
+        child: ListView(
           children: <Widget>[
-            Image.asset('assets/images/foto1.jpg'),
-            Image.asset('assets/images/foto2.jpg'),
-            Image.asset('assets/images/foto3.jpg'),
-            Image.asset('assets/images/foto1.jpg'),
-            Text('Filial Jose Faria, N° 600'),
-            Text("Filial Belo Horizonte, N° 1250, Avenida do Contorno "),
-            Text("Horario de funcionamento:08 as 19, segunda a sexta "),
+            Column(
+              children: <Widget>[
+                Image.asset('assets/images/foto2.jpg'),
+                Text('Filial Jose Faria, N° 600'),
+                Image.asset('assets/images/foto3.jpg'),
+                Text("Filial Belo Horizonte, N° 1250, Avenida do Contorno "),
+                Image.asset('assets/images/foto4.jpg'),
+                Text("Horario de funcionamento:08 as 19, segunda a sexta "),
+              ],
+            ),
           ],
         ),
       ),
