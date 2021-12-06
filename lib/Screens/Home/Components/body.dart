@@ -91,7 +91,7 @@ class Home extends StatelessWidget {
                 left: 0,
                 top: 396,
                 child: SizedBox(
-                  width: 337,
+                  width: 350,
                   height: 96,
                   child: Text(
                     "Para uma de nossas oficinas autorizadas pela Prime, para saber qual oficina autorizada mais próxima de você é só entrar em contato com um de nossos atendentes, que estão 24h disponíveis para te auxiliar.",
@@ -107,7 +107,7 @@ class Home extends StatelessWidget {
                 left: 0,
                 top: 355,
                 child: SizedBox(
-                  width: 338,
+                  width: 350,
                   height: 33,
                   child: Text(
                     "Qual oficina devo encaminhar?",

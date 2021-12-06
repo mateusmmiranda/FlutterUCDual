@@ -4,9 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_seguradora_ucdual/Screens/Cadastro/preview_page.dart';
 import 'package:flutter_seguradora_ucdual/Screens/Home/home_screen.dart';
-import 'package:flutter_seguradora_ucdual/widgets/anexo_CNH.dart';
+
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:image_picker/image_picker.dart';
 import 'package:get/get.dart';

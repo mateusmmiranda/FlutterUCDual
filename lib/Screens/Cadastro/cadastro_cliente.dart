@@ -7,7 +7,6 @@ import 'package:flutter_seguradora_ucdual/Screens/Cadastro/preview_page.dart';
 import 'package:flutter_seguradora_ucdual/Screens/Login/login_screen.dart';
 
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:flutter_seguradora_ucdual/widgets/anexo.dart';
 import 'package:flutter_seguradora_ucdual/widgets/anexo_CNH.dart';

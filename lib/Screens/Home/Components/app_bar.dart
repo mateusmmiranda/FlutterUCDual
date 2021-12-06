@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_seguradora.dart';
+import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_filial.dart';
 import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_sinistro.dart';
+import 'package:flutter_seguradora_ucdual/Screens/Cadastro/premio.dart';
 
 import 'package:flutter_seguradora_ucdual/Screens/Login/login_screen.dart';
 import 'menu_item.dart';
@@ -39,13 +40,25 @@ class CustomAppBar extends StatelessWidget {
             title: "Home",
             press: () {},
           ),
-          MenuItem(
-            title: "SegundaTela",
-            press: () {},
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => premiacao()),
+              );
+            },
+            child: Text('Premios', style: TextStyle(color: Colors.amber)),
+            style: ElevatedButton.styleFrom(primary: Colors.white),
           ),
-          MenuItem(
-            title: "Terceira TEla",
-            press: () {},
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Tela()),
+              );
+            },
+            child: Text('Filial', style: TextStyle(color: Colors.amber)),
+            style: ElevatedButton.styleFrom(primary: Colors.white),
           ),
           ElevatedButton(
             onPressed: () {
