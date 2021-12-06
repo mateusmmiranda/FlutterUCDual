@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_seguradora.dart';
+import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_sinistro.dart';
 
 import 'package:flutter_seguradora_ucdual/Screens/Login/login_screen.dart';
 import 'menu_item.dart';
-import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_sinistro.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -42,6 +43,10 @@ class CustomAppBar extends StatelessWidget {
             title: "SegundaTela",
             press: () {},
           ),
+          MenuItem(
+            title: "Terceira TEla",
+            press: () {},
+          ),
           ElevatedButton(
             onPressed: () {
               Navigator.push(
@@ -49,17 +54,9 @@ class CustomAppBar extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => CadastroSinistro()),
               );
             },
-            child: Text('Cadastrar Sinistro',
+            child: Text('Cadastro de Sinistro',
                 style: TextStyle(color: Colors.amber)),
             style: ElevatedButton.styleFrom(primary: Colors.white),
-          ),
-          MenuItem(
-            title: "Quarta Tela",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Quinta Tela",
-            press: () {},
           ),
           ElevatedButton(
             onPressed: () {

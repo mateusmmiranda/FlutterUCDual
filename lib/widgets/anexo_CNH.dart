@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-class Anexo extends StatelessWidget {
-  final File arquivo;
+class AnexoCNH extends StatelessWidget {
+  final File arquivoCNH;
 
-  Anexo({Key? key, required this.arquivo}) : super(key: key);
+  AnexoCNH({Key? key, required this.arquivoCNH}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Anexo extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12.0),
             child: Image.file(
-              arquivo,
+              arquivoCNH,
               fit: BoxFit.cover,
             ),
           ),

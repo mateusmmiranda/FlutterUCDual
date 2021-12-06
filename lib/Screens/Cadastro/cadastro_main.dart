@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_seguradora_ucdual/Screens/Login/login_screen.dart';
 
 import 'cadastro_cliente.dart';
-import 'cadastro_filial.dart';
 import 'cadastro_seguradora.dart';
 
 class CadastroMain extends StatelessWidget {
@@ -79,7 +78,7 @@ class CadastroMain extends StatelessWidget {
                         );
                       },
                       child: Text(
-                        "Sou Cliente",
+                        "Cliente",
                         style: TextStyle(color: Colors.amber),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -99,7 +98,7 @@ class CadastroMain extends StatelessWidget {
                         );
                       },
                       child: Text(
-                        "Sou Seguradora",
+                        "Seguradora",
                         style: TextStyle(color: Colors.amber),
                       ),
                       style: ElevatedButton.styleFrom(
@@ -109,38 +108,11 @@ class CadastroMain extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    ElevatedButton(
-                      //Cadastro Filial
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => CadastroFilial()),
-                        );
-                      },
-                      child: Text(
-                        "Sou Filial",
-                        style: TextStyle(color: Colors.amber),
-                      ),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                      ),
-                    ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(20, 20, 40, 20),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Esqueceu a Senha?',
-                              style: TextStyle(color: Colors.amber),
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              primary: Colors.white,
-                            ),
-                          ),
                           ElevatedButton(
                             onPressed: () {
                               Navigator.push(

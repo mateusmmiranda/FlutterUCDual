@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_seguradora_ucdual/Screens/Home/Components/body.dart';
 import 'Components/app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,11 +21,11 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             CustomAppBar(),
-            Spacer(), //vai cobrir 1/3 dos espaços livres
-            // Body(),    RETIRAR COMENTARIO ASSIM QUE IMPLEMENTAR O CORPO
+            Home(),
+            Spacer(),
             Spacer(
               flex: 2,
-            ), //vai cobrir 2/3 dos espaços livres
+            ),
           ],
         ),
       ),

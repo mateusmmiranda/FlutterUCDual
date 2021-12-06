@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_seguradora_ucdual/Screens/Cadastro/cadastro_main.dart'; // A FAZER
+import 'package:flutter_seguradora_ucdual/Screens/Home/home_screen.dart';
+
+// A FAZER
 
 class CadastroSeguradora extends StatelessWidget {
   @override
@@ -14,9 +16,9 @@ class CadastroSeguradora extends StatelessWidget {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                Color(0xFF4F4F4F), //cor 1
+                Color(0xFF4F4F4F),
                 Color(0xFF757575),
-                Color(0xFF372930)
+                Color(0xFF372930),
               ])),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,7 +38,7 @@ class CadastroSeguradora extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 20,
               ),
               Container(
                 height: 480,
@@ -44,109 +46,169 @@ class CadastroSeguradora extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                child: ListView(
                   children: <Widget>[
-                    SizedBox(
-                      height: 30,
-                    ),
-                    Text(
-                      'Login',
-                      style:
-                          TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'Entre Usando a Sua Conta',
-                      style: TextStyle(fontSize: 15, color: Colors.grey),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      width: 250,
-                      child: TextField(
-                        decoration: InputDecoration(
-                          labelText: 'Seu Email',
-                          suffixIcon: Icon(
-                            Icons.email,
-                            size: 17,
-                          ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        SizedBox(
+                          height: 30,
                         ),
-                      ),
-                    ),
-                    Container(
-                      width: 250,
-                      child: TextField(
-                        obscureText: true,
-                        decoration: InputDecoration(
-                          labelText: 'Sua Senha',
-                          suffixIcon: Icon(
-                            Icons.remove_moderator_rounded,
-                            size: 17,
-                          ),
+                        Text(
+                          'Cadastro de Seguradoras e Corretores',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(20, 20, 40, 20),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              'Esqueceu a Senha?',
-                              style: TextStyle(color: Colors.blueAccent[700]),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Corretor:',
+                              suffixIcon: Icon(
+                                Icons.person,
+                                size: 17,
+                              ),
                             ),
                           ),
-                          ElevatedButton(
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Tel Corretor:',
+                              suffixIcon: Icon(
+                                Icons.phone,
+                                size: 17,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'E-mail Corretor:',
+                              suffixIcon: Icon(
+                                Icons.email,
+                                size: 17,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Seguradora:',
+                              suffixIcon: Icon(
+                                Icons.store,
+                                size: 17,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Apólice:',
+                              suffixIcon: Icon(
+                                Icons.text_fields,
+                                size: 17,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Franquia:',
+                              suffixIcon: Icon(
+                                Icons.text_fields,
+                                size: 17,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 250,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              labelText: 'Cobertura(Total, Parcial):',
+                              suffixIcon: Icon(
+                                Icons.safety_divider,
+                                size: 17,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeScreen()),
+                            );
+                          },
+                          child: Text(
+                            'Voltar a página inicial',
+                            style: TextStyle(color: Colors.grey),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        GestureDetector(
+                          child: ElevatedButton(
                             onPressed: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CadastroMain()),
+                                    builder: (context) => HomeScreen()),
                               );
                             },
-                            child: Text(
-                              'Não tem uma conta? Clique aqui',
-                              style: TextStyle(color: Colors.blueAccent[700]),
+                            child: Container(
+                              alignment: Alignment.center,
+                              width: 250,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50),
+                                gradient: LinearGradient(colors: [
+                                  Color(0xFF4F4F4F),
+                                  Color(0xFF757575),
+                                  Color(0xFF372930),
+                                ]),
+                              ),
+                              child: Padding(
+                                padding: EdgeInsets.all(12.0),
+                                child: Text(
+                                  'Cadastrar',
+                                  style: TextStyle(
+                                      color: Colors.amber,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    GestureDetector(
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        child: Container(
-                          alignment: Alignment.center,
-                          width: 250,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(50),
-                            gradient: LinearGradient(colors: [
-                              Color(0xFF4F4F4F),
-                              Color(0xFF757575),
-                              Color(0xFF372930),
-                            ]),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsets.all(12.0),
-                            child: Text(
-                              'Login',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
                             ),
                           ),
                         ),
-                      ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                      ],
                     ),
                   ],
                 ),

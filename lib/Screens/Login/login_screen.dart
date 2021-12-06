@@ -167,30 +167,6 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    ElevatedButton(
-                      //Apenas verificar outras telas, será apagado
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => CadastroMain()),
-                        );
-                      },
-                      child: Text("Verificar tela de cadastro de admins"),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    ElevatedButton(
-                      //Apenas verificar outras telas, será apagado
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()),
-                        );
-                      },
-                      child: Text("Verificar tela após logar"),
-                    ),
                   ],
                 ),
               ),
